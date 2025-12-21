@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.DS_Store
+.plugin.pid
+.plugin.log
+dist/
+build/
+*.egg-info/

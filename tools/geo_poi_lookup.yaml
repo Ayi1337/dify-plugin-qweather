@@ -1,0 +1,139 @@
+identity:
+
+    name: qweather_geo_poi_lookup
+
+    author: ayi
+
+    label:
+
+        en_US: GeoAPI - POI Lookup
+
+        zh_Hans: GeoAPI - POI搜索
+
+description:
+
+    human:
+
+        en_US: POI Lookup provides basic information of POIs (scenic spots, tide stations, etc.) (QWeather GeoAPI).
+
+        zh_Hans: POI搜索：使用关键字和坐标查询 POI 信息（景点、潮汐站点等）（和风天气 GeoAPI）。
+
+    llm: Search POIs via QWeather GeoAPI POI Lookup.
+
+parameters:
+
+    - name: type
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Type
+
+          zh_Hans: POI类型
+
+      human_description:
+
+          en_US: POI type. One of scenic (Scenic Spot) or TSTA (Tide Station).
+
+          zh_Hans: POI类型，可选：scenic（景点）、TSTA（潮汐站点）
+
+      llm_description: Required. POI type, scenic (Scenic Spot) or TSTA (Tide Station).
+
+      form: llm
+
+    - name: location
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Location
+
+          zh_Hans: 关键字/位置
+
+      human_description:
+
+          en_US: Location keyword (supports fuzzy search), or longitude,latitude coordinates, or LocationID, or Adcode (China only). e.g. jings or 116.41,39.92
+
+          zh_Hans: 关键字（支持模糊搜索）、经度,纬度坐标、LocationID 或 Adcode（仅中国城市），例如 jings 或 116.41,39.92
+
+      llm_description: Required. Location keyword (supports fuzzy search), or longitude,latitude coordinates, or LocationID, or Adcode (China only).
+
+      form: llm
+
+    - name: city
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: City
+
+          zh_Hans: 城市限定
+
+      human_description:
+
+          en_US: Search for POI within a given city (text or LocationID). Text matching is exact; LocationID is recommended.
+
+          zh_Hans: 限定在某个城市内搜索（城市名称或 LocationID）。城市名称为精准匹配，建议使用 LocationID。
+
+      llm_description: Optional. Search within a given city (text or LocationID). Text matching is exact; LocationID is recommended.
+
+      form: llm
+
+    - name: number
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Number
+
+          zh_Hans: 返回数量
+
+      human_description:
+
+          en_US: Number of results in response (1-20), default 10
+
+          zh_Hans: 返回结果的数量（1-20），默认10
+
+      llm_description: Optional. Number of results in response (1-20), default 10.
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/geo_poi_lookup.py

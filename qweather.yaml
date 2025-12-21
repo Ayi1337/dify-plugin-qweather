@@ -1,0 +1,125 @@
+identity:
+
+    author: ayi
+
+    name: qweather
+
+    label:
+
+        en_US: QWeather
+
+        zh_Hans: 和风天气
+
+    description:
+
+        en_US: QWeather API tools for Dify
+
+        zh_Hans: 基于和风天气（QWeather）API 的 Dify 工具
+
+    icon: icon.svg
+
+    tags:
+
+        - weather
+
+credentials_for_provider:
+
+    qweather_api_key:
+
+        type: secret-input
+
+        required: true
+
+        label:
+
+            en_US: QWeather API key
+
+            zh_Hans: QWeather API Key
+
+        placeholder:
+
+            en_US: Please input your QWeather API key
+
+            zh_Hans: 请输入你的 QWeather API Key
+
+        help:
+
+            en_US: Create an API key in the QWeather console.
+
+            zh_Hans: 在和风天气控制台创建 API Key。
+
+        url: https://dev.qweather.com/
+
+    qweather_base_url:
+
+        type: text-input
+
+        required: true
+
+        label:
+
+            en_US: QWeather API Host
+
+            zh_Hans: 和风天气 API Host
+
+        placeholder:
+
+            en_US: https://your_api_host (API Host)
+
+            zh_Hans: https://你的API_Host（API Host）
+
+        help:
+
+            en_US: Required. Use your QWeather API Host (e.g. https://xxxxxx.qweatherapi.com). Find it at https://console.qweather.com/setting. All API calls in this plugin use the API Host.
+
+            zh_Hans: 必填。请填写你在和风天气控制台看到的 API Host（如 https://xxxxxx.qweatherapi.com），可在 https://console.qweather.com/setting 查看。本插件全部接口均使用 API Host。
+
+        url: https://console.qweather.com/setting
+
+tools:
+
+    - tools/geo_city_lookup.yaml
+
+    - tools/geo_top_city.yaml
+
+    - tools/geo_poi_lookup.yaml
+
+    - tools/geo_poi_range.yaml
+
+    - tools/weather_now.yaml
+
+    - tools/weather_daily_forecast.yaml
+
+    - tools/weather_hourly_forecast.yaml
+
+    - tools/grid_weather_now.yaml
+
+    - tools/grid_weather_daily_forecast.yaml
+
+    - tools/grid_weather_hourly_forecast.yaml
+
+    - tools/minutely_precipitation.yaml
+
+    - tools/indices_forecast.yaml
+
+    - tools/astronomy_sun.yaml
+
+    - tools/astronomy_moon.yaml
+
+    - tools/astronomy_solar_elevation_angle.yaml
+
+    - tools/weather_alert_current.yaml
+
+    - tools/air_quality_current.yaml
+
+    - tools/air_quality_hourly_forecast.yaml
+
+    - tools/air_quality_daily_forecast.yaml
+
+    - tools/air_quality_station.yaml
+
+extra:
+
+    python:
+
+        source: qweather.py

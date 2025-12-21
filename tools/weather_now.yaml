@@ -1,0 +1,95 @@
+identity:
+
+    name: qweather_weather_now
+
+    author: ayi
+
+    label:
+
+        en_US: Weather - Real-time Weather
+
+        zh_Hans: 天气预报 - 实时天气
+
+description:
+
+    human:
+
+        en_US: Get real-time weather data for a city or coordinate (QWeather Weather API).
+
+        zh_Hans: 实时天气：获取指定地区的实时天气数据（和风天气-实时天气）。
+
+    llm: Get real-time weather data via QWeather Weather API.
+
+parameters:
+
+    - name: location
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Location
+
+          zh_Hans: 位置
+
+      human_description:
+
+          en_US: LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places). e.g. 101010100 or 116.41,39.92
+
+          zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
+
+      llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+    - name: unit
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Unit
+
+          zh_Hans: 单位
+
+      human_description:
+
+          en_US: Unit system. m for metric (default), i for imperial.
+
+          zh_Hans: 单位制：m（公制，默认），i（英制）。
+
+      llm_description: Optional. Unit system, m (metric, default) or i (imperial).
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/weather_now.py

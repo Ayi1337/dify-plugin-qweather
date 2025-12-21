@@ -1,0 +1,95 @@
+identity:
+
+    name: qweather_geo_top_city
+
+    author: ayi
+
+    label:
+
+        en_US: GeoAPI - Top City
+
+        zh_Hans: GeoAPI - 热门城市查询
+
+description:
+
+    human:
+
+        en_US: Get a list of popular cities around the world (QWeather GeoAPI).
+
+        zh_Hans: 获取全球各国热门城市列表（和风天气 GeoAPI）。
+
+    llm: Get popular city list via QWeather GeoAPI Top City.
+
+parameters:
+
+    - name: range
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Range
+
+          zh_Hans: 国家/地区
+
+      human_description:
+
+          en_US: Search within a certain country or region (ISO 3166 code), e.g. cn
+
+          zh_Hans: 国家/地区（ISO 3166 代码），例如 cn
+
+      llm_description: Optional. Search within a certain country or region (ISO 3166 code), e.g. cn.
+
+      form: llm
+
+    - name: number
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Number
+
+          zh_Hans: 返回数量
+
+      human_description:
+
+          en_US: Number of results in response (1-20), default 10
+
+          zh_Hans: 返回结果的数量（1-20），默认10
+
+      llm_description: Optional. Number of results in response (1-20), default 10.
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/geo_top_city.py

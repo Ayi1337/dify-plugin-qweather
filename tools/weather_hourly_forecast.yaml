@@ -1,0 +1,117 @@
+identity:
+
+    name: qweather_weather_hourly_forecast
+
+    author: ayi
+
+    label:
+
+        en_US: Weather - Hourly Weather Forecast
+
+        zh_Hans: 天气预报 - 逐小时天气预报
+
+description:
+
+    human:
+
+        en_US: Hourly weather forecast for the next 24-168 hours (QWeather Weather API).
+
+        zh_Hans: 逐小时天气预报：提供未来24-168小时逐小时天气预报数据。
+
+    llm: Get hourly weather forecast via QWeather Weather API.
+
+parameters:
+
+    - name: hours
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Hours
+
+          zh_Hans: 预报小时数
+
+      human_description:
+
+          en_US: Forecast hours (path parameter). One of 24h, 72h, 168h.
+
+          zh_Hans: 预报小时数（路径参数），可选：24h、72h、168h。
+
+      llm_description: Required. Forecast hours (path parameter), one of 24h, 72h, 168h.
+
+      form: llm
+
+    - name: location
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Location
+
+          zh_Hans: 位置
+
+      human_description:
+
+          en_US: LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places). e.g. 101010100 or 116.41,39.92
+
+          zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
+
+      llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+    - name: unit
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Unit
+
+          zh_Hans: 单位
+
+      human_description:
+
+          en_US: Unit system. m for metric (default), i for imperial.
+
+          zh_Hans: 单位制：m（公制，默认），i（英制）。
+
+      llm_description: Optional. Unit system, m (metric, default) or i (imperial).
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/weather_hourly_forecast.py

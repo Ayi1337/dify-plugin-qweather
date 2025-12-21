@@ -1,0 +1,73 @@
+identity:
+
+    name: qweather_minutely_precipitation
+
+    author: ayi
+
+    label:
+
+        en_US: Minutely Forecast - Minutely Precipitation
+
+        zh_Hans: 分钟预报 - 分钟级降水
+
+description:
+
+    human:
+
+        en_US: Get minute-level precipitation forecast data every 5 minutes for the next 2 hours in China (QWeather Minutely Forecast).
+
+        zh_Hans: 分钟级降水：未来2小时每5分钟降水预报数据（仅支持中国）。
+
+    llm: Get minute-level precipitation forecast via QWeather Minutely Forecast API.
+
+parameters:
+
+    - name: location
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Coordinates
+
+          zh_Hans: 坐标
+
+      human_description:
+
+          en_US: Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.38,39.91
+
+          zh_Hans: 经度,纬度坐标（十进制，最多两位小数），例如 116.38,39.91
+
+      llm_description: Required. Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.38,39.91.
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/minutely_precipitation.py

@@ -1,0 +1,117 @@
+identity:
+
+    name: qweather_weather_alert_current
+
+    author: ayi
+
+    label:
+
+        en_US: Warning - Weather Alert (v1)
+
+        zh_Hans: 预警 - 实时天气预警
+
+description:
+
+    human:
+
+        en_US: Get officially issued real-time severe weather alerts by coordinates (QWeather Weather Alert v1).
+
+        zh_Hans: 根据经纬度坐标查询正在生效的官方天气预警信息（Weather Alert v1）。
+
+    llm: Get real-time weather alert data by latitude and longitude via QWeather Weather Alert v1.
+
+parameters:
+
+    - name: latitude
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Latitude
+
+          zh_Hans: 纬度
+
+      human_description:
+
+          en_US: Latitude in decimal format, up to 2 decimal places. e.g. 39.92
+
+          zh_Hans: 所需位置的纬度（十进制，最多支持小数点后两位），例如 39.92
+
+      llm_description: Required. Latitude in decimal format (up to 2 decimal places), e.g. 39.92.
+
+      form: llm
+
+    - name: longitude
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Longitude
+
+          zh_Hans: 经度
+
+      human_description:
+
+          en_US: Longitude in decimal format, up to 2 decimal places. e.g. 116.41
+
+          zh_Hans: 所需位置的经度（十进制，最多支持小数点后两位），例如 116.41 
+
+      llm_description: Required. Longitude in decimal format (up to 2 decimal places), e.g. 116.41.
+
+      form: llm
+
+    - name: localTime
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Local Time
+
+          zh_Hans: 本地时间
+
+      human_description:
+
+          en_US: Whether to return local time. true for local time, false for UTC time (default).
+
+          zh_Hans: 是否返回查询地点的本地时间。true 返回本地时间，false 返回UTC时间（默认）。
+
+      llm_description: Optional. Whether to return local time (true for local time, false for UTC time by default).
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/weather_alert_current.py

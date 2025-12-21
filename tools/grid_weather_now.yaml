@@ -1,0 +1,95 @@
+identity:
+
+    name: qweather_grid_weather_now
+
+    author: ayi
+
+    label:
+
+        en_US: Weather - Grid Weather Real-time
+
+        zh_Hans: 天气预报 - 格点实时天气
+
+description:
+
+    human:
+
+        en_US: Grid Weather Real-time for a coordinate (QWeather Weather API).
+
+        zh_Hans: 格点实时天气：基于数值预报模型，提供指定坐标的实时天气（分辨率3-5公里）。
+
+    llm: Get grid real-time weather via QWeather Weather API.
+
+parameters:
+
+    - name: location
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Coordinates
+
+          zh_Hans: 坐标
+
+      human_description:
+
+          en_US: Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.41,39.92
+
+          zh_Hans: 经度,纬度坐标（十进制，最多两位小数），例如 116.41,39.92
+
+      llm_description: Required. Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.41,39.92.
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+    - name: unit
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Unit
+
+          zh_Hans: 单位
+
+      human_description:
+
+          en_US: Unit system. m for metric (default), i for imperial.
+
+          zh_Hans: 单位制：m（公制，默认），i（英制）。
+
+      llm_description: Optional. Unit system, m (metric, default) or i (imperial).
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/grid_weather_now.py

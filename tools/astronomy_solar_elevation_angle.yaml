@@ -1,0 +1,139 @@
+identity:
+
+    name: qweather_astronomy_solar_elevation_angle
+
+    author: ayi
+
+    label:
+
+        en_US: Astronomy - Solar Elevation Angle
+
+        zh_Hans: 天文 - 太阳高度角
+
+description:
+
+    human:
+
+        en_US: Get global solar elevation angle and azimuth (QWeather Astronomy).
+
+        zh_Hans: 任意时间点的全球太阳高度及方位角（和风天气-太阳高度角）。
+
+    llm: Get solar elevation and azimuth angle via QWeather Astronomy API.
+
+parameters:
+
+    - name: location
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Coordinates
+
+          zh_Hans: 坐标
+
+      human_description:
+
+          en_US: Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 120.34,36.08
+
+          zh_Hans: 经度,纬度坐标（十进制，最多两位小数），例如 120.34,36.08
+
+      llm_description: Required. Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 120.34,36.08.
+
+      form: llm
+
+    - name: date
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Date
+
+          zh_Hans: 日期
+
+      human_description:
+
+          en_US: Date in yyyyMMdd format, e.g. 20210220
+
+          zh_Hans: 日期格式 yyyyMMdd，例如 20210220
+
+      llm_description: Required. Date in yyyyMMdd format.
+
+      form: llm
+
+    - name: time
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Time
+
+          zh_Hans: 时间
+
+      human_description:
+
+          en_US: Time in HHmm (24-hour), e.g. 1230
+
+          zh_Hans: 时间格式 HHmm（24小时制），例如 1230
+
+      llm_description: Required. Time in HHmm (24-hour).
+
+      form: llm
+
+    - name: tz
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Time Zone
+
+          zh_Hans: 时区
+
+      human_description:
+
+          en_US: Location time zone, e.g. 0800 or -0530
+
+          zh_Hans: 查询地区所在时区，例如 0800 或 -0530
+
+      llm_description: Required. Location time zone, e.g. 0800 or -0530.
+
+      form: llm
+
+    - name: alt
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Altitude (m)
+
+          zh_Hans: 海拔（米）
+
+      human_description:
+
+          en_US: Altitude in meters, e.g. 43
+
+          zh_Hans: 海拔高度（米），例如 43
+
+      llm_description: Required. Altitude in meters.
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/astronomy_solar_elevation_angle.py

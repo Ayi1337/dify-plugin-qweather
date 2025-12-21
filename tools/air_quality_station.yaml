@@ -1,0 +1,73 @@
+identity:
+
+    name: qweather_air_quality_station
+
+    author: ayi
+
+    label:
+
+        en_US: Air Quality - Monitoring Station Data
+
+        zh_Hans: 空气质量 - 监测站数据
+
+description:
+
+    human:
+
+        en_US: Get pollutant concentration values from air quality monitoring stations (QWeather Air Quality API v1).
+
+        zh_Hans: 监测站数据：获取空气质量监测站的污染物浓度值（空气质量API v1）。
+
+    llm: Get monitoring station pollutant data by station LocationID via QWeather Air Quality API v1.
+
+parameters:
+
+    - name: location_id
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: LocationID
+
+          zh_Hans: LocationID
+
+      human_description:
+
+          en_US: LocationID of the air quality monitoring station, e.g. P58911
+
+          zh_Hans: 空气质量监测站的 LocationID，例如 P58911
+
+      llm_description: Required. LocationID of the air quality monitoring station, e.g. P58911.
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/air_quality_station.py

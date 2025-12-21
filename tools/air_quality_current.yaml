@@ -1,0 +1,95 @@
+identity:
+
+    name: qweather_air_quality_current
+
+    author: ayi
+
+    label:
+
+        en_US: Air Quality - Current Air Quality
+
+        zh_Hans: 空气质量 - 实时空气质量
+
+description:
+
+    human:
+
+        en_US: Current air quality (AQI) by coordinates (QWeather Air Quality API v1).
+
+        zh_Hans: 实时空气质量（按经纬度坐标查询，空气质量API v1）。
+
+    llm: Get current air quality (AQI) by latitude and longitude via QWeather Air Quality API v1.
+
+parameters:
+
+    - name: latitude
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Latitude
+
+          zh_Hans: 纬度
+
+      human_description:
+
+          en_US: Latitude in decimal format, up to 2 decimal places. e.g. 39.92
+
+          zh_Hans: 所需位置的纬度（十进制，最多支持小数点后两位），例如 39.92
+
+      llm_description: Required. Latitude in decimal format (up to 2 decimal places), e.g. 39.92.
+
+      form: llm
+
+    - name: longitude
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Longitude
+
+          zh_Hans: 经度
+
+      human_description:
+
+          en_US: Longitude in decimal format, up to 2 decimal places. e.g. 116.41
+
+          zh_Hans: 所需位置的经度（十进制，最多支持小数点后两位），例如 116.41
+
+      llm_description: Required. Longitude in decimal format (up to 2 decimal places), e.g. 116.41.
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/air_quality_current.py

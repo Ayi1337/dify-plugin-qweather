@@ -1,0 +1,73 @@
+identity:
+
+    name: qweather_astronomy_sun
+
+    author: ayi
+
+    label:
+
+        en_US: Astronomy - Sunrise and Sunset
+
+        zh_Hans: 天文 - 日出日落
+
+description:
+
+    human:
+
+        en_US: Get sunrise and sunset times for the next 60 days at any location worldwide (QWeather Astronomy).
+
+        zh_Hans: 获取未来60天全球任意地点日出日落时间（和风天气-日出日落）。
+
+    llm: Get sunrise and sunset times via QWeather Astronomy API.
+
+parameters:
+
+    - name: location
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Location
+
+          zh_Hans: 位置
+
+      human_description:
+
+          en_US: LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places). e.g. 101010100 or 116.41,39.92
+
+          zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
+
+      llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
+
+      form: llm
+
+    - name: date
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Date
+
+          zh_Hans: 日期
+
+      human_description:
+
+          en_US: Date in yyyyMMdd format, up to 60 days in the future (including today). e.g. 20210220
+
+          zh_Hans: 日期格式 yyyyMMdd，最多未来60天（包含今天）。例如 20210220
+
+      llm_description: Required. Date in yyyyMMdd format, up to 60 days in the future (including today).
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/astronomy_sun.py

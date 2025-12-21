@@ -1,0 +1,139 @@
+identity:
+
+    name: qweather_geo_poi_range
+
+    author: ayi
+
+    label:
+
+        en_US: GeoAPI - POI Range
+
+        zh_Hans: GeoAPI - POI范围搜索
+
+description:
+
+    human:
+
+        en_US: POI Range API queries POI information within a specified area (QWeather GeoAPI).
+
+        zh_Hans: POI范围搜索：查询指定区域范围内的 POI 信息（和风天气 GeoAPI）。
+
+    llm: Search POIs within a radius via QWeather GeoAPI POI Range.
+
+parameters:
+
+    - name: type
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Type
+
+          zh_Hans: POI类型
+
+      human_description:
+
+          en_US: POI type. One of scenic (Scenic Spot) or TSTA (Tide Station).
+
+          zh_Hans: POI类型，可选：scenic（景点）、TSTA（潮汐站点）
+
+      llm_description: Required. POI type, scenic (Scenic Spot) or TSTA (Tide Station).
+
+      form: llm
+
+    - name: location
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Coordinates
+
+          zh_Hans: 坐标
+
+      human_description:
+
+          en_US: Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.41,39.92
+
+          zh_Hans: 经度,纬度坐标（十进制，最多支持小数点后两位），例如 116.41,39.92
+
+      llm_description: Required. Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.41,39.92.
+
+      form: llm
+
+    - name: radius
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Radius (km)
+
+          zh_Hans: 半径（公里）
+
+      human_description:
+
+          en_US: Search radius in kilometers (1-50). Default is 5.
+
+          zh_Hans: 搜索半径（公里，1-50），默认 5 公里。
+
+      llm_description: Optional. Search radius in kilometers (1-50), default 5.
+
+      form: llm
+
+    - name: number
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Number
+
+          zh_Hans: 返回数量
+
+      human_description:
+
+          en_US: Number of results in response (1-20), default 10
+
+          zh_Hans: 返回结果的数量（1-20），默认10
+
+      llm_description: Optional. Number of results in response (1-20), default 10.
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/geo_poi_range.py

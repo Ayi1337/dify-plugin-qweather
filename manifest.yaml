@@ -1,0 +1,31 @@
+version: 0.0.7
+type: plugin
+author: ayi
+name: qweather
+repo: https://github.com/Ayi1337/dify-plugin-qweather
+label:
+    en_US: QWeather
+    zh_Hans: 和风天气
+description:
+    en_US: QWeather API tools for Dify
+    zh_Hans: 基于和风天气（QWeather）API 的 Dify 工具
+icon: icon.svg
+created_at: 2025-12-20T00:00:00Z
+resource:
+    memory: 256
+    permission:
+        tool:
+            enabled: true
+plugins:
+    tools:
+        - qweather.yaml
+meta:
+    version: 0.0.6
+    arch:
+        - amd64
+        - arm64
+    runner:
+        language: python
+        version: '3.12'
+        entrypoint: main
+privacy: PRIVACY.md

@@ -1,0 +1,117 @@
+identity:
+
+    name: qweather_air_quality_hourly_forecast
+
+    author: ayi
+
+    label:
+
+        en_US: Air Quality - Air Quality Hourly Forecast
+
+        zh_Hans: 空气质量 - 空气质量小时预报
+
+description:
+
+    human:
+
+        en_US: Air quality hourly forecast for the next 24 hours (QWeather Air Quality API v1).
+
+        zh_Hans: 空气质量小时预报（未来24小时，按经纬度坐标查询，空气质量API v1）。
+
+    llm: Get air quality hourly forecast by latitude and longitude via QWeather Air Quality API v1.
+
+parameters:
+
+    - name: latitude
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Latitude
+
+          zh_Hans: 纬度
+
+      human_description:
+
+          en_US: Latitude in decimal format, up to 2 decimal places. e.g. 39.92
+
+          zh_Hans: 所需位置的纬度（十进制，最多支持小数点后两位），例如 39.92
+
+      llm_description: Required. Latitude in decimal format (up to 2 decimal places), e.g. 39.92.
+
+      form: llm
+
+    - name: longitude
+
+      type: string
+
+      required: true
+
+      label:
+
+          en_US: Longitude
+
+          zh_Hans: 经度
+
+      human_description:
+
+          en_US: Longitude in decimal format, up to 2 decimal places. e.g. 116.41
+
+          zh_Hans: 所需位置的经度（十进制，最多支持小数点后两位），例如 116.41
+
+      llm_description: Required. Longitude in decimal format (up to 2 decimal places), e.g. 116.41.
+
+      form: llm
+
+    - name: localTime
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Local Time
+
+          zh_Hans: 本地时间
+
+      human_description:
+
+          en_US: Whether to return local time. true for local time, false for UTC time (default).
+
+          zh_Hans: 是否返回查询地点的本地时间。true 返回本地时间，false 返回UTC时间（默认）。
+
+      llm_description: Optional. Whether to return local time (true for local time, false for UTC time by default).
+
+      form: llm
+
+    - name: lang
+
+      type: string
+
+      required: false
+
+      label:
+
+          en_US: Language
+
+          zh_Hans: 语言
+
+      human_description:
+
+          en_US: Response language, e.g. zh, en
+
+          zh_Hans: 返回语言，例如 zh、en
+
+      llm_description: Optional. Response language, e.g. zh or en.
+
+      form: llm
+
+extra:
+
+    python:
+
+        source: tools/air_quality_hourly_forecast.py
