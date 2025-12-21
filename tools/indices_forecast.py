@@ -14,7 +14,7 @@ INDICES_FORECAST_PATH_TEMPLATE = "/v7/indices/{days}"
 
 class QWeatherIndicesForecastTool(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
-        days = str(tool_parameters.get("days", "")).strip()
+        days = str(tool_parameters.get("days", "")).strip().lower()
         if not days:
             raise ValueError("`days` is required")
         if days not in ALLOWED_DAYS:

@@ -24,7 +24,7 @@ parameters:
 
     - name: days
 
-      type: string
+      type: select
 
       required: true
 
@@ -41,6 +41,48 @@ parameters:
           zh_Hans: 预报天数（路径参数），可选：3d、7d、10d、15d、30d。
 
       llm_description: Required. Forecast days (path parameter), one of 3d, 7d, 10d, 15d, 30d.
+
+      options:
+
+          - value: 3d
+
+            label:
+
+                en_US: 3 Days (3d)
+
+                zh_Hans: 3天（3d）
+
+          - value: 7d
+
+            label:
+
+                en_US: 7 Days (7d)
+
+                zh_Hans: 7天（7d）
+
+          - value: 10d
+
+            label:
+
+                en_US: 10 Days (10d)
+
+                zh_Hans: 10天（10d）
+
+          - value: 15d
+
+            label:
+
+                en_US: 15 Days (15d)
+
+                zh_Hans: 15天（15d）
+
+          - value: 30d
+
+            label:
+
+                en_US: 30 Days (30d)
+
+                zh_Hans: 30天（30d）
 
       form: llm
 
@@ -90,7 +132,7 @@ parameters:
 
     - name: unit
 
-      type: string
+      type: select
 
       required: false
 
@@ -107,6 +149,24 @@ parameters:
           zh_Hans: 单位制：m（公制，默认），i（英制）。
 
       llm_description: Optional. Unit system, m (metric, default) or i (imperial).
+
+      options:
+
+          - value: m
+
+            label:
+
+                en_US: Metric (m)
+
+                zh_Hans: 公制（m）
+
+          - value: i
+
+            label:
+
+                en_US: Imperial (i)
+
+                zh_Hans: 英制（i）
 
       form: llm
 

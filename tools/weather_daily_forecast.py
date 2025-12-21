@@ -18,14 +18,16 @@ class QWeatherWeatherDailyForecastTool(Tool):
         if not location:
             raise ValueError("`location` is required")
 
-        days = str(tool_parameters.get("days", "")).strip()
+        days = str(tool_parameters.get("days", "")).strip().lower()
         if not days:
             raise ValueError("`days` is required")
         if days not in ALLOWED_DAYS:
             raise ValueError(f"`days` must be one of {sorted(ALLOWED_DAYS)}")
 
         lang = str(tool_parameters.get("lang", "")).strip()
-        unit = str(tool_parameters.get("unit", "")).strip()
+        unit = str(tool_parameters.get("unit", "")).strip().lower()
+        if unit and unit not in ("m", "i"):
+            raise ValueError("`unit` must be one of ['m', 'i']")
 
         api_key = self.runtime.credentials["qweather_api_key"]
         base_url = get_api_host(self.runtime.credentials)

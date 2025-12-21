@@ -24,7 +24,7 @@ parameters:
 
     - name: hours
 
-      type: string
+      type: select
 
       required: true
 
@@ -41,6 +41,32 @@ parameters:
           zh_Hans: 预报小时数（路径参数），可选：24h、72h、168h。
 
       llm_description: Required. Forecast hours (path parameter), one of 24h, 72h, 168h.
+
+      options:
+
+          - value: 24h
+
+            label:
+
+                en_US: 24 Hours (24h)
+
+                zh_Hans: 24小时（24h）
+
+          - value: 72h
+
+            label:
+
+                en_US: 72 Hours (72h)
+
+                zh_Hans: 72小时（72h）
+
+          - value: 168h
+
+            label:
+
+                en_US: 168 Hours (168h)
+
+                zh_Hans: 168小时（168h）
 
       form: llm
 
@@ -90,7 +116,7 @@ parameters:
 
     - name: unit
 
-      type: string
+      type: select
 
       required: false
 
@@ -107,6 +133,24 @@ parameters:
           zh_Hans: 单位制：m（公制，默认），i（英制）。
 
       llm_description: Optional. Unit system, m (metric, default) or i (imperial).
+
+      options:
+
+          - value: m
+
+            label:
+
+                en_US: Metric (m)
+
+                zh_Hans: 公制（m）
+
+          - value: i
+
+            label:
+
+                en_US: Imperial (i)
+
+                zh_Hans: 英制（i）
 
       form: llm
 

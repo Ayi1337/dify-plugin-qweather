@@ -19,6 +19,8 @@ class QWeatherGeoCityLookupTool(Tool):
 
         adm = str(tool_parameters.get("adm", "")).strip()
         range_ = str(tool_parameters.get("range", "")).strip()
+        if range_:
+            range_ = range_.lower()
         number = str(tool_parameters.get("number", "")).strip()
         lang = str(tool_parameters.get("lang", "")).strip()
 

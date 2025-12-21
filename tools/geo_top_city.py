@@ -14,6 +14,8 @@ TOP_CITY_SUFFIX = "/city/top"
 class QWeatherGeoTopCityTool(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
         range_ = str(tool_parameters.get("range", "")).strip()
+        if range_:
+            range_ = range_.lower()
         number = str(tool_parameters.get("number", "")).strip()
         lang = str(tool_parameters.get("lang", "")).strip()
 

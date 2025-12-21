@@ -6,7 +6,7 @@ from typing import Any
 from dify_plugin import Tool
 from dify_plugin.entities.tool import ToolInvokeMessage
 
-from tools.qweather_client import build_url, get_api_host, get_json, to_json_text
+from tools.qweather_client import build_url, get_api_host, get_json, optional_bool_query_param, to_json_text
 
 WEATHER_ALERT_CURRENT_PATH_TEMPLATE = "/weatheralert/v1/current/{latitude}/{longitude}"
 
@@ -21,7 +21,7 @@ class QWeatherWeatherAlertCurrentTool(Tool):
         if not longitude:
             raise ValueError("`longitude` is required")
 
-        local_time = str(tool_parameters.get("localTime", "")).strip()
+        local_time = optional_bool_query_param(tool_parameters.get("localTime"), name="localTime")
         lang = str(tool_parameters.get("lang", "")).strip()
 
         api_key = self.runtime.credentials["qweather_api_key"]
@@ -30,7 +30,7 @@ class QWeatherWeatherAlertCurrentTool(Tool):
         path = WEATHER_ALERT_CURRENT_PATH_TEMPLATE.format(latitude=latitude, longitude=longitude)
 
         query: dict[str, str] = {"key": api_key}
-        if local_time:
+        if local_time is not None:
             query["localTime"] = local_time
         if lang:
             query["lang"] = lang

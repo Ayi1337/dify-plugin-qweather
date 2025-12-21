@@ -68,7 +68,7 @@ parameters:
 
     - name: localTime
 
-      type: string
+      type: boolean
 
       required: false
 

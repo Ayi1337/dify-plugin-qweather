@@ -68,7 +68,7 @@ parameters:
 
     - name: unit
 
-      type: string
+      type: select
 
       required: false
 
@@ -85,6 +85,24 @@ parameters:
           zh_Hans: 单位制：m（公制，默认），i（英制）。
 
       llm_description: Optional. Unit system, m (metric, default) or i (imperial).
+
+      options:
+
+          - value: m
+
+            label:
+
+                en_US: Metric (m)
+
+                zh_Hans: 公制（m）
+
+          - value: i
+
+            label:
+
+                en_US: Imperial (i)
+
+                zh_Hans: 英制（i）
 
       form: llm
 

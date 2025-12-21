@@ -18,7 +18,9 @@ class QWeatherWeatherNowTool(Tool):
             raise ValueError("`location` is required")
 
         lang = str(tool_parameters.get("lang", "")).strip()
-        unit = str(tool_parameters.get("unit", "")).strip()
+        unit = str(tool_parameters.get("unit", "")).strip().lower()
+        if unit and unit not in ("m", "i"):
+            raise ValueError("`unit` must be one of ['m', 'i']")
 
         api_key = self.runtime.credentials["qweather_api_key"]
         base_url = get_api_host(self.runtime.credentials)

@@ -60,6 +60,29 @@ def to_json_text(data: Any) -> str:
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
+def optional_bool_query_param(value: Any, *, name: str) -> str | None:
+    if value is None or value == "":
+        return None
+
+    if isinstance(value, bool):
+        return "true" if value else "false"
+
+    text = str(value).strip().lower()
+    if not text:
+        return None
+
+    if text in ("true", "false"):
+        return text
+
+    if text in ("1", "yes", "y", "on"):
+        return "true"
+
+    if text in ("0", "no", "n", "off"):
+        return "false"
+
+    raise ValueError(f"`{name}` must be a boolean (true/false)")
+
+
 def get_json(url: str, *, timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS) -> dict[str, Any]:
     request = Request(
         url=url,

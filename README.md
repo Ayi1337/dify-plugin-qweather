@@ -1,6 +1,6 @@
 # QWeather Tool Plugin for Dify
 
-A Dify **Tool Plugin** that provides a curated set of tools for calling **QWeather (HeWeather)** APIs, so you can fetch weather and location data in Chatflow / Workflow / Agent.
+A Dify **Tool Plugin** that provides a curated set of tools for calling **QWeather (和风天气)** APIs, so you can fetch weather and location data in Chatflow / Workflow / Agent.
 
 This plugin is designed as a thin wrapper around QWeather’s official APIs: it forwards requests to QWeather and returns the response **as-is**.
 

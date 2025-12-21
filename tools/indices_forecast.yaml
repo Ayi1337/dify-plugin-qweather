@@ -24,7 +24,7 @@ parameters:
 
     - name: days
 
-      type: string
+      type: select
 
       required: true
 
@@ -41,6 +41,24 @@ parameters:
           zh_Hans: 预报天数（路径参数），可选：1d、3d。
 
       llm_description: Required. Forecast days (path parameter), one of 1d, 3d.
+
+      options:
+
+          - value: 1d
+
+            label:
+
+                en_US: 1 Day (1d)
+
+                zh_Hans: 1天（1d）
+
+          - value: 3d
+
+            label:
+
+                en_US: 3 Days (3d)
+
+                zh_Hans: 3天（3d）
 
       form: llm
 
