@@ -1,5 +1,7 @@
 # QWeather Tool Plugin for Dify
 
+[中文文档 (Chinese Documentation)](./README_zh.md)
+
 A Dify **Tool Plugin** that provides a curated set of tools for calling **QWeather (和风天气)** APIs, so you can fetch weather and location data in Chatflow / Workflow / Agent.
 
 This plugin is designed as a thin wrapper around QWeather’s official APIs: it forwards requests to QWeather and returns the response **as-is**.
@@ -151,27 +153,7 @@ PRs and issues are welcome. When adding a new tool:
 
 ---
 
-# Dify 和风天气工具插件（中文）
+## License
 
-这是一个 Dify **工具插件（Tool Plugin）**，内置一组和风天气（QWeather）API 工具，方便在 Chatflow / Workflow / Agent 中获取天气与地理位置相关数据。
-
-本插件会将请求转发给 QWeather，并将返回结果 **原样** 输出（同时提供 `json` 与 `text` 两种输出，其中 `text` 为 `json` 的字符串化内容，不输出 `files`）。
-
-## 配置（Provider Credentials）
-
-安装插件后需配置：
-
-- `qweather_api_key`（必填）：和风天气 API Key
-- `qweather_base_url`（必填）：你的 **API Host**（如 `https://xxxxxx.qweatherapi.com`）
-
-API Host 获取位置：
-- 和风天气控制台 → 设置：https://console.qweather.com/setting
-
-说明：
-- 本插件 **所有接口** 均使用 `qweather_base_url`（API Host），不再使用 `devapi.qweather.com` / `geoapi.qweather.com` 作为默认值。
-- 可不带协议输入，插件会自动补全 `https://` 并去除末尾 `/`。
-
-## 隐私
-
-插件本身不存储你的数据；它仅请求 QWeather 并返回响应。详见 `PRIVACY.md`。
+MIT
 
