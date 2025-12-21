@@ -1,6 +1,6 @@
 version: 0.0.8
 type: plugin
-author: Ayi1337
+author: ayi1337
 name: qweather
 repo: https://github.com/Ayi1337/dify-plugin-qweather
 label:
