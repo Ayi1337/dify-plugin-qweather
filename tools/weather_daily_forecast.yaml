@@ -24,7 +24,7 @@ description:
 
         ja_JP: 日次天気予報：今後3〜30日間の日次天気予報（QWeather Weather API）。
 
-        pt_BR: Previsão diária do tempo: previsão diária do tempo para os próximos 3-30 dias (QWeather Weather API).
+        pt_BR: Previsão diária do tempo - previsão diária do tempo para os próximos 3-30 dias (QWeather Weather API).
 
     llm: Get daily weather forecast via QWeather Weather API.
 
@@ -144,9 +144,9 @@ parameters:
 
           zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
 
-          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例: 101010100 または 116.41,39.92
+          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例 - 101010100 または 116.41,39.92
 
-          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 101010100 ou 116.41,39.92
+          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex - 101010100 ou 116.41,39.92
 
       llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
 
@@ -174,9 +174,9 @@ parameters:
 
           zh_Hans: 返回语言，例如 zh、en
 
-          ja_JP: レスポンス言語。例: zh、en
+          ja_JP: レスポンス言語。例 - zh、en
 
-          pt_BR: Idioma da resposta. ex: zh, en
+          pt_BR: Idioma da resposta. ex - zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

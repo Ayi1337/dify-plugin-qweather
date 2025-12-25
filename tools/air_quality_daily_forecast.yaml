@@ -24,7 +24,7 @@ description:
 
         ja_JP: 空気質日次予報：今後3日間の空気質日次予報（QWeather Air Quality API v1）。
 
-        pt_BR: Previsão diária da qualidade do ar: previsão diária da qualidade do ar para os próximos 3 dias (QWeather Air Quality API v1).
+        pt_BR: Previsão diária da qualidade do ar - previsão diária da qualidade do ar para os próximos 3 dias (QWeather Air Quality API v1).
 
     llm: Get air quality daily forecast by latitude and longitude via QWeather Air Quality API v1.
 
@@ -52,9 +52,9 @@ parameters:
 
           zh_Hans: 所需位置的纬度（十进制，最多支持小数点后两位），例如 39.92
 
-          ja_JP: 10進数形式の緯度（小数点以下2桁まで）。例: 39.92
+          ja_JP: 10進数形式の緯度（小数点以下2桁まで）。例 - 39.92
 
-          pt_BR: Latitude em formato decimal, até 2 casas decimais. ex: 39.92
+          pt_BR: Latitude em formato decimal, até 2 casas decimais. ex - 39.92
 
       llm_description: Required. Latitude in decimal format (up to 2 decimal places), e.g. 39.92.
 
@@ -82,9 +82,9 @@ parameters:
 
           zh_Hans: 所需位置的经度（十进制，最多支持小数点后两位），例如 116.41
 
-          ja_JP: 10進数形式の経度（小数点以下2桁まで）。例: 116.41
+          ja_JP: 10進数形式の経度（小数点以下2桁まで）。例 - 116.41
 
-          pt_BR: Longitude em formato decimal, até 2 casas decimais. ex: 116.41
+          pt_BR: Longitude em formato decimal, até 2 casas decimais. ex - 116.41
 
       llm_description: Required. Longitude in decimal format (up to 2 decimal places), e.g. 116.41.
 
@@ -142,9 +142,9 @@ parameters:
 
           zh_Hans: 返回语言，例如 zh、en
 
-          ja_JP: レスポンス言語。例: zh、en
+          ja_JP: レスポンス言語。例 - zh、en
 
-          pt_BR: Idioma da resposta. ex: zh, en
+          pt_BR: Idioma da resposta. ex - zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

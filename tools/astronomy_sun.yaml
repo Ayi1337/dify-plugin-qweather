@@ -52,9 +52,9 @@ parameters:
 
           zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
 
-          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例: 101010100 または 116.41,39.92
+          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例 - 101010100 または 116.41,39.92
 
-          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 101010100 ou 116.41,39.92
+          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex - 101010100 ou 116.41,39.92
 
       llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
 
@@ -82,9 +82,9 @@ parameters:
 
           zh_Hans: 日期格式 yyyyMMdd，最多未来60天（包含今天）。例如 20210220
 
-          ja_JP: yyyyMMdd形式の日付、今後60日まで（今日を含む）。例: 20210220
+          ja_JP: yyyyMMdd形式の日付、今後60日まで（今日を含む）。例 - 20210220
 
-          pt_BR: Data no formato aaaammdd, até 60 dias no futuro (incluindo hoje). ex: 20210220
+          pt_BR: Data no formato aaaammdd, até 60 dias no futuro (incluindo hoje). ex - 20210220
 
       llm_description: Required. Date in yyyyMMdd format, up to 60 days in the future (including today).
 

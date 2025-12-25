@@ -24,7 +24,7 @@ description:
 
         ja_JP: POI範囲検索：指定されたエリア内のPOI情報を照会（QWeather GeoAPI）。
 
-        pt_BR: Alcance de POI: consultar informações de POI dentro de uma área especificada (QWeather GeoAPI).
+        pt_BR: Alcance de POI - consultar informações de POI dentro de uma área especificada (QWeather GeoAPI).
 
     llm: Search POIs within a radius via QWeather GeoAPI POI Range.
 
@@ -82,9 +82,9 @@ parameters:
 
           zh_Hans: 经度,纬度坐标（十进制，最多支持小数点后两位），例如 116.41,39.92
 
-          ja_JP: 経度,緯度座標（小数点以下2桁まで）。例: 116.41,39.92
+          ja_JP: 経度,緯度座標（小数点以下2桁まで）。例 - 116.41,39.92
 
-          pt_BR: Coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 116.41,39.92
+          pt_BR: Coordenadas longitude,latitude (decimal, até 2 casas decimais). ex - 116.41,39.92
 
       llm_description: Required. Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.41,39.92.
 
@@ -172,9 +172,9 @@ parameters:
 
           zh_Hans: 返回语言，例如 zh、en
 
-          ja_JP: レスポンス言語。例: zh、en
+          ja_JP: レスポンス言語。例 - zh、en
 
-          pt_BR: Idioma da resposta. ex: zh, en
+          pt_BR: Idioma da resposta. ex - zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

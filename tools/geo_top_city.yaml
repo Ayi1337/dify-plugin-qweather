@@ -52,9 +52,9 @@ parameters:
 
           zh_Hans: 国家/地区（ISO 3166 代码），例如 cn
 
-          ja_JP: 特定の国または地域内で検索（ISO 3166コード）。例: cn
+          ja_JP: 特定の国または地域内で検索（ISO 3166コード）。例 - cn
 
-          pt_BR: Buscar dentro de um determinado país ou região (código ISO 3166). ex: cn
+          pt_BR: Buscar dentro de um determinado país ou região (código ISO 3166). ex - cn
 
       llm_description: Optional. Search within a certain country or region (ISO 3166 code), e.g. cn.
 
@@ -112,9 +112,9 @@ parameters:
 
           zh_Hans: 返回语言，例如 zh、en
 
-          ja_JP: レスポンス言語。例: zh、en
+          ja_JP: レスポンス言語。例 - zh、en
 
-          pt_BR: Idioma da resposta. ex: zh, en
+          pt_BR: Idioma da resposta. ex - zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

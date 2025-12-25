@@ -104,9 +104,9 @@ credentials_for_provider:
 
             zh_Hans: 请填写你在和风天气控制台看到的 API Host（如 https://xxxxxx.qweatherapi.com）
 
-            ja_JP: QWeatherコンソールに表示されているAPIホストを入力してください（例: https://xxxxxx.qweatherapi.com）
+            ja_JP: QWeatherコンソールに表示されているAPIホストを入力してください（例 https://xxxxxx.qweatherapi.com）
 
-            pt_BR: Por favor, insira seu Host da API QWeather conforme mostrado no console do QWeather (ex: https://xxxxxx.qweatherapi.com)
+            pt_BR: Por favor, insira seu Host da API QWeather conforme mostrado no console do QWeather (ex https://xxxxxx.qweatherapi.com)
 
         url: https://console.qweather.com/setting
 

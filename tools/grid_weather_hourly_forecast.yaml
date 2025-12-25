@@ -24,7 +24,7 @@ description:
 
         ja_JP: グリッド天気時間別予報：今後24〜72時間のグリッド天気時間別予報（3-5km解像度、QWeather Weather API）。
 
-        pt_BR: Previsão Horária do Clima de Grade: previsão horária do clima de grade para as próximas 24-72 horas (resolução 3-5km, QWeather Weather API).
+        pt_BR: Previsão Horária do Clima de Grade - previsão horária do clima de grade para as próximas 24-72 horas (resolução 3-5km, QWeather Weather API).
 
     llm: Get grid hourly weather forecast via QWeather Weather API.
 
@@ -108,9 +108,9 @@ parameters:
 
           zh_Hans: 经度,纬度坐标（十进制，最多两位小数），例如 116.41,39.92
 
-          ja_JP: 経度,緯度座標（小数点以下2桁まで）。例: 116.41,39.92
+          ja_JP: 経度,緯度座標（小数点以下2桁まで）。例 - 116.41,39.92
 
-          pt_BR: Coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 116.41,39.92
+          pt_BR: Coordenadas longitude,latitude (decimal, até 2 casas decimais). ex - 116.41,39.92
 
       llm_description: Required. Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.41,39.92.
 
@@ -138,9 +138,9 @@ parameters:
 
           zh_Hans: 返回语言，例如 zh、en
 
-          ja_JP: レスポンス言語。例: zh、en
+          ja_JP: レスポンス言語。例 - zh、en
 
-          pt_BR: Idioma da resposta. ex: zh, en
+          pt_BR: Idioma da resposta. ex - zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

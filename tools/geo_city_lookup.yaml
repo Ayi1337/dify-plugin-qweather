@@ -24,7 +24,7 @@ description:
 
         ja_JP: 都市検索：都市検索と逆ジオコーディングを提供、多言語とあいまい検索をサポート（QWeather GeoAPI）。
 
-        pt_BR: Busca de Cidade: fornece busca de cidade e geocodificação reversa, suporta multi-idiomas e busca aproximada (QWeather GeoAPI).
+        pt_BR: Busca de Cidade - fornece busca de cidade e geocodificação reversa, suporta multi-idiomas e busca aproximada (QWeather GeoAPI).
 
     llm: Search for city/location info via QWeather GeoAPI City Lookup.
 
@@ -52,9 +52,9 @@ parameters:
 
           zh_Hans: 地区名称（支持模糊搜索）、经度,纬度坐标、LocationID 或 Adcode（仅中国城市），例如 北京/beijing 或 116.41,39.92
 
-          ja_JP: テキストキーワード（あいまい検索対応）、または経度,緯度座標、LocationID、Adcode（中国のみ）。例: beijing または 116.41,39.92
+          ja_JP: テキストキーワード（あいまい検索対応）、または経度,緯度座標、LocationID、Adcode（中国のみ）。例 - beijing または 116.41,39.92
 
-          pt_BR: Palavra-chave de texto (suporta busca aproximada), ou coordenadas longitude,latitude, LocationID ou Adcode (somente China). ex: beijing ou 116.41,39.92
+          pt_BR: Palavra-chave de texto (suporta busca aproximada), ou coordenadas longitude,latitude, LocationID ou Adcode (somente China). ex - beijing ou 116.41,39.92
 
       llm_description: Required. Location keyword (supports fuzzy search), or longitude,latitude coordinates, or LocationID, or Adcode (China only).
 
@@ -82,9 +82,9 @@ parameters:
 
           zh_Hans: 上级行政区划过滤，例如 beijing 或 黑龙江
 
-          ja_JP: 結果をフィルタリングする上位行政区画。例: beijing
+          ja_JP: 結果をフィルタリングする上位行政区画。例 - beijing
 
-          pt_BR: Divisões administrativas superiores para filtrar resultados. ex: beijing
+          pt_BR: Divisões administrativas superiores para filtrar resultados. ex - beijing
 
       llm_description: Optional. Superior administrative divisions to filter results (e.g. beijing).
 
@@ -112,9 +112,9 @@ parameters:
 
           zh_Hans: 搜索范围（ISO 3166 国家/地区代码），例如 cn
 
-          ja_JP: 特定の国または地域内で検索（ISO 3166コード）。例: cn
+          ja_JP: 特定の国または地域内で検索（ISO 3166コード）。例 - cn
 
-          pt_BR: Buscar dentro de um determinado país ou região (código ISO 3166). ex: cn
+          pt_BR: Buscar dentro de um determinado país ou região (código ISO 3166). ex - cn
 
       llm_description: Optional. Search within a certain country or region (ISO 3166 code), e.g. cn.
 
@@ -172,9 +172,9 @@ parameters:
 
           zh_Hans: 返回语言，例如 zh、en
 
-          ja_JP: レスポンス言語。例: zh、en
+          ja_JP: レスポンス言語。例 - zh、en
 
-          pt_BR: Idioma da resposta. ex: zh, en
+          pt_BR: Idioma da resposta. ex - zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

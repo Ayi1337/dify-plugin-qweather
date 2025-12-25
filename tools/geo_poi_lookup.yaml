@@ -24,7 +24,7 @@ description:
 
         ja_JP: POI検索：キーワードと座標を使用してPOI情報（景勝地、潮汐観測所など）を検索（QWeather GeoAPI）。
 
-        pt_BR: Busca de POI: fornece informações básicas de POIs (pontos turísticos, estações de maré, etc.) (QWeather GeoAPI).
+        pt_BR: Busca de POI - fornece informações básicas de POIs (pontos turísticos, estações de maré, etc.) (QWeather GeoAPI).
 
     llm: Search POIs via QWeather GeoAPI POI Lookup.
 
@@ -82,9 +82,9 @@ parameters:
 
           zh_Hans: 关键字（支持模糊搜索）、经度,纬度坐标、LocationID 或 Adcode（仅中国城市），例如 jings 或 116.41,39.92
 
-          ja_JP: 位置キーワード（あいまい検索対応）、または経度,緯度座標、LocationID、Adcode（中国のみ）。例: jings または 116.41,39.92
+          ja_JP: 位置キーワード（あいまい検索対応）、または経度,緯度座標、LocationID、Adcode（中国のみ）。例 - jings または 116.41,39.92
 
-          pt_BR: Palavra-chave de localização (suporta busca aproximada), ou coordenadas longitude,latitude, LocationID ou Adcode (somente China). ex: jings ou 116.41,39.92
+          pt_BR: Palavra-chave de localização (suporta busca aproximada), ou coordenadas longitude,latitude, LocationID ou Adcode (somente China). ex - jings ou 116.41,39.92
 
       llm_description: Required. Location keyword (supports fuzzy search), or longitude,latitude coordinates, or LocationID, or Adcode (China only).
 
@@ -172,9 +172,9 @@ parameters:
 
           zh_Hans: 返回语言，例如 zh、en
 
-          ja_JP: レスポンス言語。例: zh、en
+          ja_JP: レスポンス言語。例 - zh、en
 
-          pt_BR: Idioma da resposta. ex: zh, en
+          pt_BR: Idioma da resposta. ex - zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

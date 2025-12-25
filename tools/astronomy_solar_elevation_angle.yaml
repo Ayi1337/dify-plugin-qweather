@@ -52,9 +52,9 @@ parameters:
 
           zh_Hans: 经度,纬度坐标（十进制，最多两位小数），例如 120.34,36.08
 
-          ja_JP: 経度,緯度座標（小数点以下2桁まで）。例: 120.34,36.08
+          ja_JP: 経度,緯度座標（小数点以下2桁まで）。例 - 120.34,36.08
 
-          pt_BR: Coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 120.34,36.08
+          pt_BR: Coordenadas longitude,latitude (decimal, até 2 casas decimais). ex - 120.34,36.08
 
       llm_description: Required. Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 120.34,36.08.
 
@@ -82,9 +82,9 @@ parameters:
 
           zh_Hans: 日期格式 yyyyMMdd，例如 20210220
 
-          ja_JP: yyyyMMdd形式の日付。例: 20210220
+          ja_JP: yyyyMMdd形式の日付。例 - 20210220
 
-          pt_BR: Data no formato aaaammdd. ex: 20210220
+          pt_BR: Data no formato aaaammdd. ex - 20210220
 
       llm_description: Required. Date in yyyyMMdd format.
 
@@ -112,9 +112,9 @@ parameters:
 
           zh_Hans: 时间格式 HHmm（24小时制），例如 1230
 
-          ja_JP: HHmm形式の時刻（24時間制）。例: 1230
+          ja_JP: HHmm形式の時刻（24時間制）。例 - 1230
 
-          pt_BR: Hora no formato HHmm (24 horas). ex: 1230
+          pt_BR: Hora no formato HHmm (24 horas). ex - 1230
 
       llm_description: Required. Time in HHmm (24-hour).
 
@@ -142,9 +142,9 @@ parameters:
 
           zh_Hans: 查询地区所在时区，例如 0800 或 -0530
 
-          ja_JP: 場所のタイムゾーン。例: 0800 または -0530
+          ja_JP: 場所のタイムゾーン。例 - 0800 または -0530
 
-          pt_BR: Fuso horário do local. ex: 0800 ou -0530
+          pt_BR: Fuso horário do local. ex - 0800 ou -0530
 
       llm_description: Required. Location time zone, e.g. 0800 or -0530.
 
@@ -172,9 +172,9 @@ parameters:
 
           zh_Hans: 海拔高度（米），例如 43
 
-          ja_JP: 高度（メートル）。例: 43
+          ja_JP: 高度（メートル）。例 - 43
 
-          pt_BR: Altitude em metros. ex: 43
+          pt_BR: Altitude em metros. ex - 43
 
       llm_description: Required. Altitude in meters.
 

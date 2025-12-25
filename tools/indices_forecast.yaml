@@ -108,9 +108,9 @@ parameters:
 
           zh_Hans: 天气指数类型 ID，多个用英文逗号分隔，例如 1,2
 
-          ja_JP: 天気指数タイプID、カンマ区切り。例: 1,2
+          ja_JP: 天気指数タイプID、カンマ区切り。例 - 1,2
 
-          pt_BR: IDs de tipo de índices meteorológicos, separados por vírgula. ex: 1,2
+          pt_BR: IDs de tipo de índices meteorológicos, separados por vírgula. ex - 1,2
 
       llm_description: Required. Weather indices type IDs, comma-separated, e.g. 1,2.
 
@@ -138,9 +138,9 @@ parameters:
 
           zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
 
-          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例: 101010100 または 116.41,39.92
+          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例 - 101010100 または 116.41,39.92
 
-          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 101010100 ou 116.41,39.92
+          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex - 101010100 ou 116.41,39.92
 
       llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
 
@@ -168,9 +168,9 @@ parameters:
 
           zh_Hans: 返回语言，例如 zh、en
 
-          ja_JP: レスポンス言語。例: zh、en
+          ja_JP: レスポンス言語。例 - zh、en
 
-          pt_BR: Idioma da resposta. ex: zh, en
+          pt_BR: Idioma da resposta. ex - zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 
