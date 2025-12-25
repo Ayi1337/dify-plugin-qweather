@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: GeoAPI - 城市搜索
 
+        ja_JP: GeoAPI - 都市検索
+
+        pt_BR: GeoAPI - Busca de Cidade
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: City Lookup provides city search and reverse geocoding, supports multi-language and fuzzy search (QWeather GeoAPI).
 
         zh_Hans: 城市搜索：提供全球城市搜索与坐标反查，支持多语言与模糊搜索（和风天气 GeoAPI）。
+
+        ja_JP: 都市検索：都市検索と逆ジオコーディングを提供、多言語とあいまい検索をサポート（QWeather GeoAPI）。
+
+        pt_BR: Busca de Cidade: fornece busca de cidade e geocodificação reversa, suporta multi-idiomas e busca aproximada (QWeather GeoAPI).
 
     llm: Search for city/location info via QWeather GeoAPI City Lookup.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 位置
 
+          ja_JP: 位置
+
+          pt_BR: Localização
+
       human_description:
 
           en_US: Text keyword (supports fuzzy search), or longitude,latitude coordinates, or LocationID, or Adcode (China only). e.g. beijing or 116.41,39.92
 
           zh_Hans: 地区名称（支持模糊搜索）、经度,纬度坐标、LocationID 或 Adcode（仅中国城市），例如 北京/beijing 或 116.41,39.92
+
+          ja_JP: テキストキーワード（あいまい検索対応）、または経度,緯度座標、LocationID、Adcode（中国のみ）。例: beijing または 116.41,39.92
+
+          pt_BR: Palavra-chave de texto (suporta busca aproximada), ou coordenadas longitude,latitude, LocationID ou Adcode (somente China). ex: beijing ou 116.41,39.92
 
       llm_description: Required. Location keyword (supports fuzzy search), or longitude,latitude coordinates, or LocationID, or Adcode (China only).
 
@@ -56,11 +72,19 @@ parameters:
 
           zh_Hans: 上级行政区划
 
+          ja_JP: 上位行政区画
+
+          pt_BR: Divisão Administrativa
+
       human_description:
 
           en_US: Superior administrative divisions to filter results, e.g. beijing
 
           zh_Hans: 上级行政区划过滤，例如 beijing 或 黑龙江
+
+          ja_JP: 結果をフィルタリングする上位行政区画。例: beijing
+
+          pt_BR: Divisões administrativas superiores para filtrar resultados. ex: beijing
 
       llm_description: Optional. Superior administrative divisions to filter results (e.g. beijing).
 
@@ -78,11 +102,19 @@ parameters:
 
           zh_Hans: 搜索范围
 
+          ja_JP: 検索範囲
+
+          pt_BR: Alcance
+
       human_description:
 
           en_US: Search within a certain country or region (ISO 3166 code), e.g. cn
 
           zh_Hans: 搜索范围（ISO 3166 国家/地区代码），例如 cn
+
+          ja_JP: 特定の国または地域内で検索（ISO 3166コード）。例: cn
+
+          pt_BR: Buscar dentro de um determinado país ou região (código ISO 3166). ex: cn
 
       llm_description: Optional. Search within a certain country or region (ISO 3166 code), e.g. cn.
 
@@ -100,11 +132,19 @@ parameters:
 
           zh_Hans: 返回数量
 
+          ja_JP: 結果数
+
+          pt_BR: Número
+
       human_description:
 
           en_US: Number of results in response (1-20), default 10
 
           zh_Hans: 返回结果的数量（1-20），默认10
+
+          ja_JP: レスポンスの結果数（1-20）、デフォルト10
+
+          pt_BR: Número de resultados na resposta (1-20), padrão 10
 
       llm_description: Optional. Number of results in response (1-20), default 10.
 
@@ -122,11 +162,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

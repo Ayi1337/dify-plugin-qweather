@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: 分钟预报 - 分钟级降水
 
+        ja_JP: 分単位予報 - 分単位降水量
+
+        pt_BR: Previsão Minutária - Precipitação Minutária
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Get minute-level precipitation forecast data every 5 minutes for the next 2 hours in China (QWeather Minutely Forecast).
 
         zh_Hans: 分钟级降水：未来2小时每5分钟降水预报数据（仅支持中国）。
+
+        ja_JP: 分単位降水量：今後2時間の5分ごとの降水量予報データ（中国のみ、QWeather Minutely Forecast）。
+
+        pt_BR: Precipitação Minutária: dados de previsão de precipitação a cada 5 minutos para as próximas 2 horas na China (QWeather Minutely Forecast).
 
     llm: Get minute-level precipitation forecast via QWeather Minutely Forecast API.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 坐标
 
+          ja_JP: 座標
+
+          pt_BR: Coordenadas
+
       human_description:
 
           en_US: Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.38,39.91
 
           zh_Hans: 经度,纬度坐标（十进制，最多两位小数），例如 116.38,39.91
+
+          ja_JP: 経度,緯度座標（小数点以下2桁まで）。例: 116.38,39.91
+
+          pt_BR: Coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 116.38,39.91
 
       llm_description: Required. Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.38,39.91.
 
@@ -56,11 +72,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

@@ -1,4 +1,4 @@
-version: 0.0.8
+version: 0.0.9
 type: plugin
 author: ayi1337
 name: qweather
@@ -12,7 +12,7 @@ description:
 icon: icon.svg
 created_at: 2025-12-20T00:00:00Z
 resource:
-    memory: 256
+    memory: 1024
     permission:
         tool:
             enabled: true
@@ -28,4 +28,8 @@ meta:
         language: python
         version: '3.12'
         entrypoint: main
+tags:
+    - weather
+    - productivity
+    - travel
 privacy: PRIVACY.md

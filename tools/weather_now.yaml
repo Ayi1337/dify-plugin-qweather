@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: 天气预报 - 实时天气
 
+        ja_JP: 天気 - リアルタイム天気
+
+        pt_BR: Clima - Tempo em Tempo Real
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Get real-time weather data for a city or coordinate (QWeather Weather API).
 
         zh_Hans: 实时天气：获取指定地区的实时天气数据（和风天气-实时天气）。
+
+        ja_JP: リアルタイム天気：都市または座標のリアルタイム天気データを取得（QWeather Weather API）。
+
+        pt_BR: Tempo em Tempo Real: obter dados meteorológicos em tempo real para uma cidade ou coordenada (QWeather Weather API).
 
     llm: Get real-time weather data via QWeather Weather API.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 位置
 
+          ja_JP: 位置
+
+          pt_BR: Localização
+
       human_description:
 
           en_US: LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places). e.g. 101010100 or 116.41,39.92
 
           zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
+
+          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例: 101010100 または 116.41,39.92
+
+          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 101010100 ou 116.41,39.92
 
       llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
 
@@ -56,11 +72,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 
@@ -78,11 +102,19 @@ parameters:
 
           zh_Hans: 单位
 
+          ja_JP: 単位
+
+          pt_BR: Unidade
+
       human_description:
 
           en_US: Unit system. m for metric (default), i for imperial.
 
           zh_Hans: 单位制：m（公制，默认），i（英制）。
+
+          ja_JP: 単位系。m（メートル法、デフォルト）、i（ヤードポンド法）
+
+          pt_BR: Sistema de unidade. m para métrico (padrão), i para imperial
 
       llm_description: Optional. Unit system, m (metric, default) or i (imperial).
 
@@ -96,6 +128,10 @@ parameters:
 
                 zh_Hans: 公制（m）
 
+                ja_JP: メートル法（m）
+
+                pt_BR: Métrico (m)
+
           - value: i
 
             label:
@@ -103,6 +139,10 @@ parameters:
                 en_US: Imperial (i)
 
                 zh_Hans: 英制（i）
+
+                ja_JP: ヤードポンド法（i）
+
+                pt_BR: Imperial (i)
 
       form: llm
 

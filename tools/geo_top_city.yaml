@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: GeoAPI - 热门城市查询
 
+        ja_JP: GeoAPI - 人気都市
+
+        pt_BR: GeoAPI - Cidade Principal
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Get a list of popular cities around the world (QWeather GeoAPI).
 
         zh_Hans: 获取全球各国热门城市列表（和风天气 GeoAPI）。
+
+        ja_JP: 世界中の人気都市のリストを取得（QWeather GeoAPI）。
+
+        pt_BR: Obter uma lista de cidades populares ao redor do mundo (QWeather GeoAPI).
 
     llm: Get popular city list via QWeather GeoAPI Top City.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 国家/地区
 
+          ja_JP: 国/地域
+
+          pt_BR: País/Região
+
       human_description:
 
           en_US: Search within a certain country or region (ISO 3166 code), e.g. cn
 
           zh_Hans: 国家/地区（ISO 3166 代码），例如 cn
+
+          ja_JP: 特定の国または地域内で検索（ISO 3166コード）。例: cn
+
+          pt_BR: Buscar dentro de um determinado país ou região (código ISO 3166). ex: cn
 
       llm_description: Optional. Search within a certain country or region (ISO 3166 code), e.g. cn.
 
@@ -56,11 +72,19 @@ parameters:
 
           zh_Hans: 返回数量
 
+          ja_JP: 結果数
+
+          pt_BR: Número
+
       human_description:
 
           en_US: Number of results in response (1-20), default 10
 
           zh_Hans: 返回结果的数量（1-20），默认10
+
+          ja_JP: レスポンスの結果数（1-20）、デフォルト10
+
+          pt_BR: Número de resultados na resposta (1-20), padrão 10
 
       llm_description: Optional. Number of results in response (1-20), default 10.
 
@@ -78,11 +102,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

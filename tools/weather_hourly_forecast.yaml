@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: 天气预报 - 逐小时天气预报
 
+        ja_JP: 天気 - 時間別天気予報
+
+        pt_BR: Clima - Previsão Horária do Tempo
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Hourly weather forecast for the next 24-168 hours (QWeather Weather API).
 
         zh_Hans: 逐小时天气预报：提供未来24-168小时逐小时天气预报数据。
+
+        ja_JP: 時間別天気予報：今後24〜168時間の時間別天気予報（QWeather Weather API）。
+
+        pt_BR: Previsão horária do tempo: previsão horária do tempo para as próximas 24-168 horas (QWeather Weather API).
 
     llm: Get hourly weather forecast via QWeather Weather API.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 预报小时数
 
+          ja_JP: 予報時間数
+
+          pt_BR: Horas
+
       human_description:
 
           en_US: Forecast hours (path parameter). One of 24h, 72h, 168h.
 
           zh_Hans: 预报小时数（路径参数），可选：24h、72h、168h。
+
+          ja_JP: 予報時間数（パスパラメータ）。24h、72h、168hのいずれか
+
+          pt_BR: Horas de previsão (parâmetro de caminho). 24h, 72h ou 168h
 
       llm_description: Required. Forecast hours (path parameter), one of 24h, 72h, 168h.
 
@@ -52,6 +68,10 @@ parameters:
 
                 zh_Hans: 24小时（24h）
 
+                ja_JP: 24時間（24h）
+
+                pt_BR: 24 Horas (24h)
+
           - value: 72h
 
             label:
@@ -60,6 +80,10 @@ parameters:
 
                 zh_Hans: 72小时（72h）
 
+                ja_JP: 72時間（72h）
+
+                pt_BR: 72 Horas (72h)
+
           - value: 168h
 
             label:
@@ -67,6 +91,10 @@ parameters:
                 en_US: 168 Hours (168h)
 
                 zh_Hans: 168小时（168h）
+
+                ja_JP: 168時間（168h）
+
+                pt_BR: 168 Horas (168h)
 
       form: llm
 
@@ -82,11 +110,19 @@ parameters:
 
           zh_Hans: 位置
 
+          ja_JP: 位置
+
+          pt_BR: Localização
+
       human_description:
 
           en_US: LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places). e.g. 101010100 or 116.41,39.92
 
           zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
+
+          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例: 101010100 または 116.41,39.92
+
+          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 101010100 ou 116.41,39.92
 
       llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
 
@@ -104,11 +140,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 
@@ -126,11 +170,19 @@ parameters:
 
           zh_Hans: 单位
 
+          ja_JP: 単位
+
+          pt_BR: Unidade
+
       human_description:
 
           en_US: Unit system. m for metric (default), i for imperial.
 
           zh_Hans: 单位制：m（公制，默认），i（英制）。
+
+          ja_JP: 単位系。m（メートル法、デフォルト）、i（ヤードポンド法）
+
+          pt_BR: Sistema de unidade. m para métrico (padrão), i para imperial
 
       llm_description: Optional. Unit system, m (metric, default) or i (imperial).
 
@@ -144,6 +196,10 @@ parameters:
 
                 zh_Hans: 公制（m）
 
+                ja_JP: メートル法（m）
+
+                pt_BR: Métrico (m)
+
           - value: i
 
             label:
@@ -151,6 +207,10 @@ parameters:
                 en_US: Imperial (i)
 
                 zh_Hans: 英制（i）
+
+                ja_JP: ヤードポンド法（i）
+
+                pt_BR: Imperial (i)
 
       form: llm
 

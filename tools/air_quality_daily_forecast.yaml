@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: 空气质量 - 空气质量每日预报
 
+        ja_JP: 空気質 - 空気質日次予報
+
+        pt_BR: Qualidade do Ar - Previsão Diária da Qualidade do Ar
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Air quality daily forecast for the next 3 days (QWeather Air Quality API v1).
 
         zh_Hans: 空气质量每日预报（未来3天，按经纬度坐标查询，空气质量API v1）。
+
+        ja_JP: 空気質日次予報：今後3日間の空気質日次予報（QWeather Air Quality API v1）。
+
+        pt_BR: Previsão diária da qualidade do ar: previsão diária da qualidade do ar para os próximos 3 dias (QWeather Air Quality API v1).
 
     llm: Get air quality daily forecast by latitude and longitude via QWeather Air Quality API v1.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 纬度
 
+          ja_JP: 緯度
+
+          pt_BR: Latitude
+
       human_description:
 
           en_US: Latitude in decimal format, up to 2 decimal places. e.g. 39.92
 
           zh_Hans: 所需位置的纬度（十进制，最多支持小数点后两位），例如 39.92
+
+          ja_JP: 10進数形式の緯度（小数点以下2桁まで）。例: 39.92
+
+          pt_BR: Latitude em formato decimal, até 2 casas decimais. ex: 39.92
 
       llm_description: Required. Latitude in decimal format (up to 2 decimal places), e.g. 39.92.
 
@@ -56,11 +72,19 @@ parameters:
 
           zh_Hans: 经度
 
+          ja_JP: 経度
+
+          pt_BR: Longitude
+
       human_description:
 
           en_US: Longitude in decimal format, up to 2 decimal places. e.g. 116.41
 
           zh_Hans: 所需位置的经度（十进制，最多支持小数点后两位），例如 116.41
+
+          ja_JP: 10進数形式の経度（小数点以下2桁まで）。例: 116.41
+
+          pt_BR: Longitude em formato decimal, até 2 casas decimais. ex: 116.41
 
       llm_description: Required. Longitude in decimal format (up to 2 decimal places), e.g. 116.41.
 
@@ -78,11 +102,19 @@ parameters:
 
           zh_Hans: 本地时间
 
+          ja_JP: 現地時刻
+
+          pt_BR: Hora Local
+
       human_description:
 
           en_US: Whether to return local time. true for local time, false for UTC time (default).
 
           zh_Hans: 是否返回查询地点的本地时间。true 返回本地时间，false 返回UTC时间（默认）。
+
+          ja_JP: 現地時刻を返すかどうか。true（現地時刻）、false（UTC時刻、デフォルト）
+
+          pt_BR: Se deve retornar hora local. true para hora local, false para hora UTC (padrão)
 
       llm_description: Optional. Whether to return local time (true for local time, false for UTC time by default).
 
@@ -100,11 +132,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

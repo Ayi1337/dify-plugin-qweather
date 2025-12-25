@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: 天文 - 月升月落和月相
 
+        ja_JP: 天文 - 月の出・月の入りと月相
+
+        pt_BR: Astronomia - Lua e Fase Lunar
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Get moonrise, moonset and hourly moon phase data for the next 60 days at any location worldwide (QWeather Astronomy).
 
         zh_Hans: 获取未来60天全球任意地点月升月落和逐小时月相数据（和风天气-月升月落和月相）。
+
+        ja_JP: 世界中の任意の場所で今後60日間の月の出・月の入りと時間別月相データを取得（QWeather Astronomy）。
+
+        pt_BR: Obter dados de nascer da lua, pôr da lua e fase lunar a cada hora para os próximos 60 dias em qualquer local do mundo (QWeather Astronomy).
 
     llm: Get moonrise, moonset and moon phase via QWeather Astronomy API.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 位置
 
+          ja_JP: 位置
+
+          pt_BR: Localização
+
       human_description:
 
           en_US: LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places). e.g. 101010100 or 116.41,39.92
 
           zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
+
+          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例: 101010100 または 116.41,39.92
+
+          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 101010100 ou 116.41,39.92
 
       llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
 
@@ -56,11 +72,19 @@ parameters:
 
           zh_Hans: 日期
 
+          ja_JP: 日付
+
+          pt_BR: Data
+
       human_description:
 
           en_US: Date in yyyyMMdd format, up to 60 days in the future (including today). e.g. 20211120
 
           zh_Hans: 日期格式 yyyyMMdd，最多未来60天（包含今天）。例如 20211120
+
+          ja_JP: yyyyMMdd形式の日付、今後60日まで（今日を含む）。例: 20211120
+
+          pt_BR: Data no formato aaaammdd, até 60 dias no futuro (incluindo hoje). ex: 20211120
 
       llm_description: Required. Date in yyyyMMdd format, up to 60 days in the future (including today).
 
@@ -78,11 +102,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

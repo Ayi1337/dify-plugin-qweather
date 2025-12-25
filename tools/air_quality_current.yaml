@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: 空气质量 - 实时空气质量
 
+        ja_JP: 空気質 - 現在の空気質
+
+        pt_BR: Qualidade do Ar - Qualidade do Ar Atual
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Current air quality (AQI) by coordinates (QWeather Air Quality API v1).
 
         zh_Hans: 实时空气质量（按经纬度坐标查询，空气质量API v1）。
+
+        ja_JP: 座標による現在の空気質（AQI、QWeather Air Quality API v1）。
+
+        pt_BR: Qualidade do ar atual (IQA) por coordenadas (QWeather Air Quality API v1).
 
     llm: Get current air quality (AQI) by latitude and longitude via QWeather Air Quality API v1.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 纬度
 
+          ja_JP: 緯度
+
+          pt_BR: Latitude
+
       human_description:
 
           en_US: Latitude in decimal format, up to 2 decimal places. e.g. 39.92
 
           zh_Hans: 所需位置的纬度（十进制，最多支持小数点后两位），例如 39.92
+
+          ja_JP: 10進数形式の緯度（小数点以下2桁まで）。例: 39.92
+
+          pt_BR: Latitude em formato decimal, até 2 casas decimais. ex: 39.92
 
       llm_description: Required. Latitude in decimal format (up to 2 decimal places), e.g. 39.92.
 
@@ -56,11 +72,19 @@ parameters:
 
           zh_Hans: 经度
 
+          ja_JP: 経度
+
+          pt_BR: Longitude
+
       human_description:
 
           en_US: Longitude in decimal format, up to 2 decimal places. e.g. 116.41
 
           zh_Hans: 所需位置的经度（十进制，最多支持小数点后两位），例如 116.41
+
+          ja_JP: 10進数形式の経度（小数点以下2桁まで）。例: 116.41
+
+          pt_BR: Longitude em formato decimal, até 2 casas decimais. ex: 116.41
 
       llm_description: Required. Longitude in decimal format (up to 2 decimal places), e.g. 116.41.
 
@@ -78,11 +102,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

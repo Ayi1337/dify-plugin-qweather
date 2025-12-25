@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: 天气预报 - 每日天气预报
 
+        ja_JP: 天気 - 日次天気予報
+
+        pt_BR: Clima - Previsão Diária do Tempo
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Daily weather forecast for the next 3-30 days (QWeather Weather API).
 
         zh_Hans: 每日天气预报：提供未来3-30天天气预报数据。
+
+        ja_JP: 日次天気予報：今後3〜30日間の日次天気予報（QWeather Weather API）。
+
+        pt_BR: Previsão diária do tempo: previsão diária do tempo para os próximos 3-30 dias (QWeather Weather API).
 
     llm: Get daily weather forecast via QWeather Weather API.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 预报天数
 
+          ja_JP: 予報日数
+
+          pt_BR: Dias
+
       human_description:
 
           en_US: Forecast days (path parameter). One of 3d, 7d, 10d, 15d, 30d.
 
           zh_Hans: 预报天数（路径参数），可选：3d、7d、10d、15d、30d。
+
+          ja_JP: 予報日数（パスパラメータ）。3d、7d、10d、15d、30dのいずれか
+
+          pt_BR: Dias de previsão (parâmetro de caminho). 3d, 7d, 10d, 15d ou 30d
 
       llm_description: Required. Forecast days (path parameter), one of 3d, 7d, 10d, 15d, 30d.
 
@@ -52,6 +68,10 @@ parameters:
 
                 zh_Hans: 3天（3d）
 
+                ja_JP: 3日（3d）
+
+                pt_BR: 3 Dias (3d)
+
           - value: 7d
 
             label:
@@ -59,6 +79,10 @@ parameters:
                 en_US: 7 Days (7d)
 
                 zh_Hans: 7天（7d）
+
+                ja_JP: 7日（7d）
+
+                pt_BR: 7 Dias (7d)
 
           - value: 10d
 
@@ -68,6 +92,10 @@ parameters:
 
                 zh_Hans: 10天（10d）
 
+                ja_JP: 10日（10d）
+
+                pt_BR: 10 Dias (10d)
+
           - value: 15d
 
             label:
@@ -76,6 +104,10 @@ parameters:
 
                 zh_Hans: 15天（15d）
 
+                ja_JP: 15日（15d）
+
+                pt_BR: 15 Dias (15d)
+
           - value: 30d
 
             label:
@@ -83,6 +115,10 @@ parameters:
                 en_US: 30 Days (30d)
 
                 zh_Hans: 30天（30d）
+
+                ja_JP: 30日（30d）
+
+                pt_BR: 30 Dias (30d)
 
       form: llm
 
@@ -98,11 +134,19 @@ parameters:
 
           zh_Hans: 位置
 
+          ja_JP: 位置
+
+          pt_BR: Localização
+
       human_description:
 
           en_US: LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places). e.g. 101010100 or 116.41,39.92
 
           zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
+
+          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例: 101010100 または 116.41,39.92
+
+          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 101010100 ou 116.41,39.92
 
       llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
 
@@ -120,11 +164,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 
@@ -142,11 +194,19 @@ parameters:
 
           zh_Hans: 单位
 
+          ja_JP: 単位
+
+          pt_BR: Unidade
+
       human_description:
 
           en_US: Unit system. m for metric (default), i for imperial.
 
           zh_Hans: 单位制：m（公制，默认），i（英制）。
+
+          ja_JP: 単位系。m（メートル法、デフォルト）、i（ヤードポンド法）
+
+          pt_BR: Sistema de unidade. m para métrico (padrão), i para imperial
 
       llm_description: Optional. Unit system, m (metric, default) or i (imperial).
 
@@ -160,6 +220,10 @@ parameters:
 
                 zh_Hans: 公制（m）
 
+                ja_JP: メートル法（m）
+
+                pt_BR: Métrico (m)
+
           - value: i
 
             label:
@@ -167,6 +231,10 @@ parameters:
                 en_US: Imperial (i)
 
                 zh_Hans: 英制（i）
+
+                ja_JP: ヤードポンド法（i）
+
+                pt_BR: Imperial (i)
 
       form: llm
 

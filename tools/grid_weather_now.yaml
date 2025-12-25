@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: 天气预报 - 格点实时天气
 
+        ja_JP: 天気 - グリッド天気リアルタイム
+
+        pt_BR: Clima - Clima de Grade em Tempo Real
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Grid Weather Real-time for a coordinate (QWeather Weather API).
 
         zh_Hans: 格点实时天气：基于数值预报模型，提供指定坐标的实时天气（分辨率3-5公里）。
+
+        ja_JP: グリッド天気リアルタイム：座標のグリッドベースのリアルタイム天気（3-5km解像度、QWeather Weather API）。
+
+        pt_BR: Clima de Grade em Tempo Real: clima baseado em grade em tempo real para coordenadas (resolução 3-5km, QWeather Weather API).
 
     llm: Get grid real-time weather via QWeather Weather API.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 坐标
 
+          ja_JP: 座標
+
+          pt_BR: Coordenadas
+
       human_description:
 
           en_US: Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.41,39.92
 
           zh_Hans: 经度,纬度坐标（十进制，最多两位小数），例如 116.41,39.92
+
+          ja_JP: 経度,緯度座標（小数点以下2桁まで）。例: 116.41,39.92
+
+          pt_BR: Coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 116.41,39.92
 
       llm_description: Required. Longitude,latitude coordinates (decimal, up to 2 decimal places), e.g. 116.41,39.92.
 
@@ -56,11 +72,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 
@@ -78,11 +102,19 @@ parameters:
 
           zh_Hans: 单位
 
+          ja_JP: 単位
+
+          pt_BR: Unidade
+
       human_description:
 
           en_US: Unit system. m for metric (default), i for imperial.
 
           zh_Hans: 单位制：m（公制，默认），i（英制）。
+
+          ja_JP: 単位系。m（メートル法、デフォルト）、i（ヤードポンド法）
+
+          pt_BR: Sistema de unidade. m para métrico (padrão), i para imperial
 
       llm_description: Optional. Unit system, m (metric, default) or i (imperial).
 
@@ -96,6 +128,10 @@ parameters:
 
                 zh_Hans: 公制（m）
 
+                ja_JP: メートル法（m）
+
+                pt_BR: Métrico (m)
+
           - value: i
 
             label:
@@ -103,6 +139,10 @@ parameters:
                 en_US: Imperial (i)
 
                 zh_Hans: 英制（i）
+
+                ja_JP: ヤードポンド法（i）
+
+                pt_BR: Imperial (i)
 
       form: llm
 

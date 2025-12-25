@@ -10,17 +10,27 @@ identity:
 
         zh_Hans: 和风天气
 
+        ja_JP: QWeather
+
+        pt_BR: QWeather
+
     description:
 
         en_US: QWeather API tools for Dify
 
         zh_Hans: 基于和风天气（QWeather）API 的 Dify 工具
 
+        ja_JP: Dify用QWeather APIツール
+
+        pt_BR: Ferramentas de API QWeather para Dify
+
     icon: icon.svg
 
     tags:
 
         - weather
+        - productivity
+        - travel
 
 credentials_for_provider:
 
@@ -36,17 +46,29 @@ credentials_for_provider:
 
             zh_Hans: QWeather API Key
 
+            ja_JP: QWeather APIキー
+
+            pt_BR: Chave de API QWeather
+
         placeholder:
 
             en_US: Please input your QWeather API key
 
             zh_Hans: 请输入你的 QWeather API Key
 
+            ja_JP: QWeather APIキーを入力してください
+
+            pt_BR: Por favor, insira sua chave de API QWeather
+
         help:
 
             en_US: Create an API key in the QWeather console.
 
             zh_Hans: 在和风天气控制台创建 API Key。
+
+            ja_JP: QWeatherコンソールでAPIキーを作成してください。
+
+            pt_BR: Crie uma chave de API no console do QWeather.
 
         url: https://dev.qweather.com/
 
@@ -62,17 +84,29 @@ credentials_for_provider:
 
             zh_Hans: 和风天气 API Host
 
+            ja_JP: QWeather APIホスト
+
+            pt_BR: Host da API QWeather
+
         placeholder:
 
-            en_US: https://your_api_host (API Host)
+            en_US: https://xxxxxx.qweatherapi.com
 
-            zh_Hans: https://你的API_Host（API Host）
+            zh_Hans: https://xxxxxx.qweatherapi.com
+
+            ja_JP: https://xxxxxx.qweatherapi.com
+
+            pt_BR: https://xxxxxx.qweatherapi.com
 
         help:
 
-            en_US: Required. Use your QWeather API Host (e.g. https://xxxxxx.qweatherapi.com). Find it at https://console.qweather.com/setting. All API calls in this plugin use the API Host.
+            en_US: Please input your QWeather API Host as shown in the QWeather console (e.g. https://xxxxxx.qweatherapi.com)
 
-            zh_Hans: 必填。请填写你在和风天气控制台看到的 API Host（如 https://xxxxxx.qweatherapi.com），可在 https://console.qweather.com/setting 查看。本插件全部接口均使用 API Host。
+            zh_Hans: 请填写你在和风天气控制台看到的 API Host（如 https://xxxxxx.qweatherapi.com）
+
+            ja_JP: QWeatherコンソールに表示されているAPIホストを入力してください（例: https://xxxxxx.qweatherapi.com）
+
+            pt_BR: Por favor, insira seu Host da API QWeather conforme mostrado no console do QWeather (ex: https://xxxxxx.qweatherapi.com)
 
         url: https://console.qweather.com/setting
 

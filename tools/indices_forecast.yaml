@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: 天气指数 - 天气指数预报
 
+        ja_JP: 天気指数 - 天気指数予報
+
+        pt_BR: Índices Meteorológicos - Previsão de Índices Meteorológicos
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Get weather indices forecast data for cities in China and around the world (QWeather Weather Indices).
 
         zh_Hans: 获取中国和全球城市天气生活指数预报数据（和风天气-天气指数）。
+
+        ja_JP: 中国および世界中の都市の天気生活指数予報データを取得（QWeather Weather Indices）。
+
+        pt_BR: Obter dados de previsão de índices de estilo de vida meteorológicos para cidades na China e em todo o mundo (QWeather Weather Indices).
 
     llm: Get weather indices forecast via QWeather Weather Indices API.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: 预报天数
 
+          ja_JP: 予報日数
+
+          pt_BR: Dias
+
       human_description:
 
           en_US: Forecast days (path parameter). One of 1d, 3d.
 
           zh_Hans: 预报天数（路径参数），可选：1d、3d。
+
+          ja_JP: 予報日数（パスパラメータ）。1dまたは3d
+
+          pt_BR: Dias de previsão (parâmetro de caminho). 1d ou 3d
 
       llm_description: Required. Forecast days (path parameter), one of 1d, 3d.
 
@@ -52,6 +68,10 @@ parameters:
 
                 zh_Hans: 1天（1d）
 
+                ja_JP: 1日（1d）
+
+                pt_BR: 1 Dia (1d)
+
           - value: 3d
 
             label:
@@ -59,6 +79,10 @@ parameters:
                 en_US: 3 Days (3d)
 
                 zh_Hans: 3天（3d）
+
+                ja_JP: 3日（3d）
+
+                pt_BR: 3 Dias (3d)
 
       form: llm
 
@@ -74,11 +98,19 @@ parameters:
 
           zh_Hans: 指数类型
 
+          ja_JP: 指数タイプ
+
+          pt_BR: Tipo de Índice
+
       human_description:
 
           en_US: Weather indices type IDs, comma-separated, e.g. 1,2
 
           zh_Hans: 天气指数类型 ID，多个用英文逗号分隔，例如 1,2
+
+          ja_JP: 天気指数タイプID、カンマ区切り。例: 1,2
+
+          pt_BR: IDs de tipo de índices meteorológicos, separados por vírgula. ex: 1,2
 
       llm_description: Required. Weather indices type IDs, comma-separated, e.g. 1,2.
 
@@ -96,11 +128,19 @@ parameters:
 
           zh_Hans: 位置
 
+          ja_JP: 位置
+
+          pt_BR: Localização
+
       human_description:
 
           en_US: LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places). e.g. 101010100 or 116.41,39.92
 
           zh_Hans: LocationID 或以英文逗号分隔的经度,纬度坐标（十进制，最多两位小数），例如 101010100 或 116.41,39.92
+
+          ja_JP: LocationIDまたは経度,緯度座標（小数点以下2桁まで）。例: 101010100 または 116.41,39.92
+
+          pt_BR: LocationID ou coordenadas longitude,latitude (decimal, até 2 casas decimais). ex: 101010100 ou 116.41,39.92
 
       llm_description: Required. LocationID or longitude,latitude coordinates (decimal, up to 2 decimal places).
 
@@ -118,11 +158,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 

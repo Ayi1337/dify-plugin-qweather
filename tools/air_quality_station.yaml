@@ -10,6 +10,10 @@ identity:
 
         zh_Hans: 空气质量 - 监测站数据
 
+        ja_JP: 空気質 - 監視ステーションデータ
+
+        pt_BR: Qualidade do Ar - Dados da Estação de Monitoramento
+
 description:
 
     human:
@@ -17,6 +21,10 @@ description:
         en_US: Get pollutant concentration values from air quality monitoring stations (QWeather Air Quality API v1).
 
         zh_Hans: 监测站数据：获取空气质量监测站的污染物浓度值（空气质量API v1）。
+
+        ja_JP: 監視ステーションデータ：空気質監視ステーションから汚染物質濃度値を取得（QWeather Air Quality API v1）。
+
+        pt_BR: Dados da Estação de Monitoramento: obter valores de concentração de poluentes das estações de monitoramento da qualidade do ar (QWeather Air Quality API v1).
 
     llm: Get monitoring station pollutant data by station LocationID via QWeather Air Quality API v1.
 
@@ -34,11 +42,19 @@ parameters:
 
           zh_Hans: LocationID
 
+          ja_JP: LocationID
+
+          pt_BR: LocationID
+
       human_description:
 
           en_US: LocationID of the air quality monitoring station, e.g. P58911
 
           zh_Hans: 空气质量监测站的 LocationID，例如 P58911
+
+          ja_JP: 空気質監視ステーションのLocationID。例: P58911
+
+          pt_BR: LocationID da estação de monitoramento da qualidade do ar. ex: P58911
 
       llm_description: Required. LocationID of the air quality monitoring station, e.g. P58911.
 
@@ -56,11 +72,19 @@ parameters:
 
           zh_Hans: 语言
 
+          ja_JP: 言語
+
+          pt_BR: Idioma
+
       human_description:
 
           en_US: Response language, e.g. zh, en
 
           zh_Hans: 返回语言，例如 zh、en
+
+          ja_JP: レスポンス言語。例: zh、en
+
+          pt_BR: Idioma da resposta. ex: zh, en
 
       llm_description: Optional. Response language, e.g. zh or en.
 
